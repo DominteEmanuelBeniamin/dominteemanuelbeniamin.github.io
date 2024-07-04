@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #202020; /* Set the entire background to gray */
+    color: white; /* Change the text color to white for better contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #202020;
+    color: #e4ee51;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.content-section {
+    background-color: #333; /* Slightly lighter gray for content sections */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    transition: transform 0.3s;
+}
+
+.content-section:hover {
+    transform: scale(1.02);
+}
+
+.solid-box {
+    background-color: #333; /* Slightly lighter gray for solid boxes */
+    border: 1px solid #e4ee51;
+    padding: 20px;
+}
+
+.welcome-section {
+    background-color: #202020;
+    text-align: center;
+}
+
+.welcome-text {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 800px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button-link {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.contact-info {
+    background-color: #e4ee51;
+    padding: 15px;
+    border-radius: 5px;
+    color: #202020; /* Dark text color for contrast */
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+h2 {
+    color: #e4ee51;
+}
+
+p {
+    color: white;
+}
+
+.button {
+    background-color: #8723e7;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    width: 90px; /* Fixed width for the buttons */
+    text-align: center;
+    margin: 0 auto; /* Center the button */
+}
+
+.button:hover {
+    background-color: #5400a3;
+}
+
+footer {
+    background-color: #202020;
+    color: #e4ee51;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-section {
+        padding: 15px;
+    }
+
+    .solid-box {
+        padding: 15px;
+    }
+
+    .button {
+        padding: 8px 16px;
+        width: auto; /* Adjust the button width */
+    }
+}
+
+@media (max-width: 480px) {
+    .content-section {
+        padding: 10px;
+    }
+
+    .solid-box {
+        padding: 10px;
+    }
+
+    .button {
+        padding: 6px 12px;
+        width: auto; /* Adjust the button width */
+    }
+
+    .welcome-section {
+        padding: 20px;
+    }
+
+    .welcome-text {
+        padding: 15px;
+    }
+}
