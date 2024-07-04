@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #202020; /* Set the entire background to gray */
+    color: white; /* Change the text color to white for better contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #202020;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 2em;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.content-section {
+    background-color: #333; /* Slightly lighter gray for content sections */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 100%;
+    max-width: 800px;
+}
+
+.solid-box {
+    background-color: #333; /* Slightly lighter gray for solid boxes */
+    border: 1px solid #e4ee51;
+    padding: 20px;
+}
+
+.hotel-details, .hotel-info {
+    margin-bottom: 20px;
+}
+
+.hotel-details h2 {
+    font-size: 1.5em;
+    color: #e4ee51;
+}
+
+.hotel-details p, .hotel-info p {
+    margin: 5px 0;
+}
+
+.accommodation-schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.accommodation-schedule th, .accommodation-schedule td {
+    border: 1px solid #e4ee51;
+    padding: 10px;
+    text-align: left;
+}
+
+.accommodation-schedule th {
+    background-color: #444;
+    color: #e4ee51;
+}
+
+.accommodation-schedule td {
+    background-color: #555;
+}
+
+.hotel-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hotel-link a {
+    color: #e4ee51;
+    text-decoration: none;
+}
+
+.hotel-link a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #202020;
+    color: #e4ee51;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-section {
+        padding: 15px;
+    }
+
+    .hotel-details h2 {
+        font-size: 1.2em;
+    }
+
+    .accommodation-schedule th, .accommodation-schedule td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-section {
+        padding: 10px;
+    }
+
+    .hotel-details h2 {
+        font-size: 1em;
+    }
+
+    .accommodation-schedule th, .accommodation-schedule td {
+        padding: 6px;
+    }
+}
