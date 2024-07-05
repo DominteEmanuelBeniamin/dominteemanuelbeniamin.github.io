@@ -2,28 +2,49 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #202020; /* Set the entire background to gray */
-    color: white; /* Change the text color to white for better contrast */
+    background-color: #EFEFED; /* dusty white */
+    color: #222222; /* dark gray */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 header {
-    background-color: #202020;
+    background-color: #222222; /* dark gray */
     color: white;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
     width: 100%;
-    font-size: 2em;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+header h1 {
     margin: 0;
+    font-size: 36px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+}
+
+nav a i {
+    margin-right: 5px;
 }
 
 main {
-    padding: 20px;
+    padding: 160px 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,20 +53,62 @@ main {
 }
 
 .content-section {
-    background-color: #333; /* Slightly lighter gray for content sections */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    position: relative;
+    margin-bottom: 40px;
+    padding: 40px 0;
     width: 100%;
     max-width: 800px;
+    text-align: center;
 }
 
-.solid-box {
-    background-color: #333; /* Slightly lighter gray for solid boxes */
-    border: 1px solid #e4ee51;
-    padding: 20px;
+.content-section::before,
+.content-section::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #5C7604; /* green */
+}
+
+.content-section::before {
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-width: 0 0 2px 2px;
+}
+
+.content-section::after {
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-width: 2px 2px 0 0;
+}
+
+.content-section h2::before,
+.content-section h2::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #5C7604; /* green */
+}
+
+.content-section h2::before {
+    top: -10px;
+    left: -10px;
+    width: 10px;
+    height: 10px;
+    border-width: 0 0 2px 2px;
+}
+
+.content-section h2::after {
+    bottom: -10px;
+    right: -10px;
+    width: 10px;
+    height: 10px;
+    border-width: 2px 2px 0 0;
+}
+
+.centered-content {
+    text-align: center;
 }
 
 .experience-details {
@@ -55,33 +118,50 @@ main {
 }
 
 .experience-item h2 {
-    font-size: 1.5em;
-    color: #e4ee51;
-    margin-bottom: 10px;
+    position: relative;
+    font-size: 28px;
+    color: #F15A24; /* orange */
+    margin-top: 0;
 }
 
 .experience-item p {
     margin-bottom: 10px;
+    color: #222222; /* dark gray */
 }
 
 footer {
-    background-color: #202020;
-    color: #e4ee51;
+    background-color: #222222; /* dark gray */
+    color: #E4EE51; /* yellow */
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
-    position: fixed;
-    bottom: 0;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    header {
+        padding: 40px 20px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 140px 15px 15px;
+    }
+
     .content-section {
-        padding: 15px;
+        padding: 30px 0;
     }
 
     .experience-item h2 {
-        font-size: 1.2em;
+        font-size: 24px;
     }
 
     .experience-item p {
@@ -90,12 +170,29 @@ footer {
 }
 
 @media (max-width: 480px) {
+    header {
+        padding: 30px 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 12px;
+    }
+
+    main {
+        padding: 130px 10px 10px;
+    }
+
     .content-section {
-        padding: 10px;
+        padding: 20px 0;
     }
 
     .experience-item h2 {
-        font-size: 1em;
+        font-size: 20px;
     }
 
     .experience-item p {
