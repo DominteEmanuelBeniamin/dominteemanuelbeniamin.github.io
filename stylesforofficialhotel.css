@@ -86,13 +86,13 @@ main {
 }
 
 .accommodation-schedule th {
-    background-color: #444;
-    color: #E4EE51; /* yellow */
+    background-color: #EFEFED;
+    color: #F15A24; /* yellow */
 }
 
 .accommodation-schedule td {
-    background-color: #555;
-    color: #EFEFED; /* dusty white */
+    background-color: #EFEFED;
+    color: #F15A24; /* dusty white */
 }
 
 .hotel-link {
