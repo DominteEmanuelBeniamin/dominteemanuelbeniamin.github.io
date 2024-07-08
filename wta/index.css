@@ -11,7 +11,7 @@ body {
 
 header {
     background-color: #222222; /* dark gray */
-    color: white;
+    color: #FF2F92; /* pink */
     padding: 20px;
     text-align: center;
     width: 100%;
@@ -42,7 +42,7 @@ nav.right {
 }
 
 nav a {
-    color: white;
+    color: #FF2F92; /* pink */
     text-decoration: none;
     margin: 0 10px;
     font-size: 18px;
@@ -69,7 +69,7 @@ main {
     width: 100%;
     max-width: 800px;
     text-align: center;
-    border-bottom: 2px solid #5C7604; /* green */
+    border-bottom: 2px solid #A223E6; /* purple */
 }
 
 .content-section:last-of-type {
@@ -81,7 +81,7 @@ main {
 }
 
 .content h2 {
-    color: #F15A24; /* orange */
+    color: #FF2F92; /* pink */
     margin-top: 0;
     font-size: 28px;
 }
@@ -99,7 +99,7 @@ main {
 }
 
 .button {
-    background-color: #F15A24; /* orange */
+    background-color: #A223E6; /* purple */
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -109,7 +109,7 @@ main {
     justify-content: center;
     margin-top: 20px;
     text-align: center;
-    border: 2px solid #5C7604; /* green */
+    border: 2px solid #FF2F92; /* pink */
 }
 
 .button i {
@@ -117,12 +117,12 @@ main {
 }
 
 .button:hover {
-    background-color: #222222; /* dark gray */
+    background-color: #FF2F92; /* pink */
 }
 
 footer {
     background-color: #222222; /* dark gray */
-    color: #E4EE51; /* yellow */
+    color: #e2001a; /* red UniCredit */
     text-align: center;
     padding: 20px;
     width: 100%;
