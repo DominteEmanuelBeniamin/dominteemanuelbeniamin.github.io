@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #222222; /* dark gray */
+    background-color: #A223E6; /* purple */
     color: #FF2F92; /* pink */
     padding: 20px;
     text-align: center;
@@ -69,7 +69,7 @@ main {
     width: 100%;
     max-width: 800px;
     text-align: center;
-    border-bottom: 2px solid #A223E6; /* purple */
+    border-bottom: 2px solid #FF2F92; /* pink */
 }
 
 .content-section:last-of-type {
@@ -81,7 +81,7 @@ main {
 }
 
 .content h2 {
-    color: #FF2F92; /* pink */
+    color: #A223E6; /* purple */
     margin-top: 0;
     font-size: 28px;
 }
@@ -99,7 +99,7 @@ main {
 }
 
 .button {
-    background-color: #A223E6; /* purple */
+    background-color: #FF2F92; /* pink */
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -109,7 +109,7 @@ main {
     justify-content: center;
     margin-top: 20px;
     text-align: center;
-    border: 2px solid #FF2F92; /* pink */
+    border: 2px solid #A223E6; /* purple */
 }
 
 .button i {
@@ -117,11 +117,11 @@ main {
 }
 
 .button:hover {
-    background-color: #FF2F92; /* pink */
+    background-color: #A223E6; /* purple */
 }
 
 footer {
-    background-color: #222222; /* dark gray */
+    background-color: #A223E6; /* purple */
     color: #e2001a; /* red UniCredit */
     text-align: center;
     padding: 20px;
