@@ -33,6 +33,14 @@ nav {
     display: flex;
 }
 
+nav.left {
+    margin-right: auto;
+}
+
+nav.right {
+    margin-left: auto;
+}
+
 nav a {
     color: white;
     text-decoration: none;
@@ -130,9 +138,9 @@ footer {
         margin: 10px 0;
     }
 
-    nav {
-        flex-wrap: wrap;
+    nav.left, nav.right {
         justify-content: center;
+        margin: 0;
     }
 
     nav a {
@@ -163,13 +171,23 @@ footer {
         margin: 10px 0;
     }
 
-    nav {
-        flex-direction: column;
+    nav.left, nav.right {
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
     }
 
     nav a {
         margin: 5px 0;
         font-size: 14px;
+    }
+
+    nav a span {
+        display: none;
+    }
+
+    nav a i {
+        margin: 0;
     }
 
     main {
