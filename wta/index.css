@@ -4,9 +4,6 @@ body {
     padding: 0;
     background-color: #EFEFED; /* dusty white */
     color: #222222; /* dark gray */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 header {
@@ -20,7 +17,7 @@ header {
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center the content */
     align-items: center;
 }
 
@@ -31,14 +28,15 @@ header .logo {
 
 nav {
     display: flex;
+    align-items: center;
 }
 
 nav.left {
-    margin-right: auto;
+    margin-right: 20px; /* Add some space between the logo and the left nav */
 }
 
 nav.right {
-    margin-left: auto;
+    margin-left: 20px; /* Add some space between the logo and the right nav */
 }
 
 nav a {
@@ -55,20 +53,28 @@ nav a i {
 }
 
 main {
-    padding: 160px 20px 20px; /* Adjust top padding to fit header */
+    padding: 90px 20px 20px; /* Adjust top padding to fit header and create space */
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
-    max-width: 1200px;
+}
+
+#welcome {
+    background-color: white; /* Set background color to white */
+    margin-top: 10px; /* Add top margin to create 10px gap from header */
+    margin-bottom: 20px; /* Add bottom margin to create 20px gap to next section */
+    width: 100%; /* Set width to full container width */
+    padding: 20px; /* Adjust padding */
+    border-radius: 0; /* Remove rounded corners if any */
+    box-shadow: none; /* Remove shadow for a cleaner edge-to-edge look */
+    text-align: center; /* Center the text */
 }
 
 .content-section {
-    margin-bottom: 40px;
+    margin-bottom: 20px; /* Ensure 20px margin between sections */
     padding: 40px 0;
     width: 100%;
-    max-width: 800px;
-    text-align: center;
+    text-align: center; /* Center the text */
     border-bottom: 2px solid #FF2F92; /* pink */
 }
 
@@ -77,7 +83,7 @@ main {
 }
 
 .centered-content {
-    text-align: center;
+    text-align: center; /* Center the text */
 }
 
 .content h2 {
@@ -92,8 +98,8 @@ main {
 }
 
 .letter-signature {
-    text-align: left;
-    margin-top: 20px;
+    text-align: center; /* Center the text */
+    margin-top: 25px;
     font-style: italic;
     color: #222222; /* dark gray */
 }
@@ -120,12 +126,64 @@ main {
     background-color: #A223E6; /* purple */
 }
 
-footer {
-    background-color: #A223E6; /* purple */
-    color: #e2001a; /* red UniCredit */
-    text-align: center;
-    padding: 20px;
-    width: 100%;
+/* Scrollbar Section */
+.scrollbar-container {
+    display: flex;
+    overflow-x: auto;
+    width: 100%; /* Full container width */
+    padding: 10px 0;
+}
+
+.scroll-item {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust width as needed */
+    height: auto;
+    background-color: #fff; /* White background for contrast */
+    color: #222222; /* Dark text color */
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.scroll-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info .occupation {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    color: #A223E6; /* purple for occupation */
+}
+
+.contact-info .name {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+.contact-info .phone {
+    font-size: 12px;
+    color: #555; /* Grey for phone number */
+}
+
+.scroll-item:last-child {
+    margin-right: 0;
 }
 
 /* Responsive Design */
@@ -158,7 +216,7 @@ footer {
     }
 
     main {
-        padding: 160px 15px 15px; /* Adjusted to fit new header position */
+        padding: 170px 15px 15px; /* Adjusted to fit new header position */
     }
 
     .content-section {
@@ -196,6 +254,7 @@ footer {
 
     nav a i {
         margin: 0;
+        font-size: 24px; /* Increase icon size on mobile */
     }
 
     main {
