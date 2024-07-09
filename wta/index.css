@@ -8,7 +8,7 @@ body {
 
 header {
     background-color: #A223E6; /* purple */
-    color: #FF2F92; /* pink */
+    color: #EFEFED; /* pink */
     padding: 20px;
     text-align: center;
     width: 100%;
@@ -40,7 +40,7 @@ nav.right {
 }
 
 nav a {
-    color: #FF2F92; /* pink */
+    color: #EFEFED; /* pink */
     text-decoration: none;
     margin: 0 10px;
     font-size: 18px;
@@ -107,23 +107,64 @@ main {
 .button {
     background-color: #FF2F92; /* pink */
     color: white;
-    padding: 10px 20px;
+    padding: 15px 30px; /* Bigger padding */
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px; /* Rounded button */
     display: inline-flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
     text-align: center;
     border: 2px solid #A223E6; /* purple */
+    font-size: 20px; /* Bigger font size */
 }
 
 .button i {
-    margin-right: 8px;
+    margin-right: 10px; /* Slightly bigger margin */
 }
 
 .button:hover {
     background-color: #A223E6; /* purple */
+}
+
+/* Venue Section */
+.venue-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.venue-container.left {
+    flex-direction: row;
+}
+
+.venue-container.right {
+    flex-direction: row-reverse;
+}
+
+.venue-container .responsive-img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    flex: 1;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.button-container .button {
+    margin: 0 10px;
+}
+
+.venue-description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
 }
 
 /* Scrollbar Section */
@@ -224,7 +265,21 @@ main {
     }
 
     .button {
-        padding: 8px 16px;
+        padding: 12px 24px;
+        font-size: 18px;
+    }
+
+    .venue-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .venue-container .responsive-img {
+        margin: 0;
+    }
+
+    .button-container {
+        margin-top: 20px;
     }
 }
 
@@ -266,6 +321,20 @@ main {
     }
 
     .button {
-        padding: 6px 12px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .venue-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .venue-container .responsive-img {
+        margin: 0;
+    }
+
+    .button-container {
+        margin-top: 20px;
     }
 }

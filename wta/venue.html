@@ -1,48 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venue Information - Concord Iasi Open</title>
+    <title>Venue Information</title>
     <link rel="stylesheet" href="stylesforvenue.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="index.js"></script>
 </head>
+
 <body>
     <header>
-        <h1>Venue Information</h1>
-        <nav>
-            <a href="#welcome"><i class="fas fa-home"></i> Welcome</a>
-            <a href="#venue"><i class="fas fa-map-marker-alt"></i> Venue</a>
-            <a href="#site-map"><i class="fas fa-map"></i> Site Map</a>
-            <a href="#important-contacts"><i class="fas fa-address-book"></i> Contacts</a>
-            <a href="#schedule"><i class="fas fa-calendar-alt"></i> Schedule</a>
-            <a href="#hotel"><i class="fas fa-hotel"></i> Hotel</a>
-            <a href="#players-night"><i class="fas fa-moon"></i> Players Night</a>
-            <a href="#experience"><i class="fas fa-globe"></i> Experience Iași</a>
-        </nav>
+        
+        <img src="logo.svg" alt="Logo" class="logo">
+        
     </header>
     <main>
-        <section id="venue-information" class="content-section">
-            <div class="info-container">
-                <h2>Practice and Match Venues</h2>
-                <ul>
-                    <li>Two dedicated courts are located on-site at the tournament venue.</li>
-                    <li>Additional courts are available for practice just a few minutes away from the main venue.</li>
-                </ul>
+        <section id="venues">6
+            <h2>Practice and Match Venues</h2>
+            <div class="content">
+                <div class="image-container">
+                    <img src="sitemap.svg" alt="Site Map">
+                </div>
+                <div class="info-container">
+                    <ul>
+                        <li>Two dedicated courts are located on-site at the tournament venue.</li>
+                        <li>Additional courts are available for practice just a few minutes away from the main venue.</li>
+                    </ul>
+                    <p><strong>Address:</strong> Str. Moara de Vant 171, Iași 707023</p>
+                    <p><strong>Google Maps:</strong> <a href="https://www.google.com/maps/place/Strada+Moara+de+V%C3%A2nt+171,+Ia%C8%99i+707023" target="_blank">View on Google Maps</a></p>
+                    <p><strong>Website:</strong> <a href="https://www.iasiopen.com/" target="_blank">Iasi Open</a></p>
+                </div>
+            </div>
+        </section>
 
-                <h2>Player Services</h2>
-                <ul>
-                    <li><strong>Players Desk:</strong> The Players Desk will be open daily from 8:00 AM until the conclusion of the last match.</li>
-                    <li><strong>Catering:</strong> Meal vouchers can be purchased at the Players Desk for €10 each. These vouchers can be redeemed at designated catering areas for a delicious and convenient meal option.</li>
-                    <li><strong>Gym Facilities:</strong> A well-equipped 70sqm training room is located on-site at the tournament venue for your pre-match warm-up or workout needs. In addition, complimentary access is available to a state-of-the-art gym.</li>
-                    <li><strong>Official Ball:</strong> Practice balls available at the Players Desk.</li>
-                    <li><strong>Stringing Services:</strong> Stringing services are available for a fee. Please contact the Players Desk for current pricing and to schedule your racquet.</li>
-                </ul>
+        <section id="player-services">
+            <h2>Player Services</h2>
+            <div class="service">
+                <h3>Players Desk</h3>
+                <p>The Players Desk will be open daily from 8:00 AM until the conclusion of the last match.</p>
+            </div>
+            <div class="service">
+                <h3>Catering</h3>
+                <p>Meal vouchers can be purchased at the Players Desk for €10 each. These vouchers can be redeemed at designated catering areas for a delicious and convenient meal option.</p>
+            </div>
+            <div class="service">
+                <h3>Gym Facilities</h3>
+                <p>A well-equipped 70sqm training room is located on-site at the tournament venue for your pre-match warm-up or workout needs. In addition, complimentary access is available to a state-of-the-art gym.</p>
+            </div>
+            <div class="service">
+                <h3>Official Ball</h3>
+                <p>Official Ball is Dunlop. Practice balls available at the Players Desk.</p>
+            </div>
+            <div class="service">
+                <h3>Stringing Services</h3>
+                <p>Stringing services are available for a fee. Please contact the Players Desk for current pricing and to schedule your racquet.</p>
             </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Concord Iasi Open. All rights reserved.</p>
-    </footer>
 </body>
+
 </html>
