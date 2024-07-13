@@ -1,48 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venue Information - Concord Iasi Open</title>
-    <link rel="stylesheet" href="stylesforvenue.css">
+    <title>Tournament Schedule</title>
+    <link rel="stylesheet" href="stylesforschedule.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="index.js"></script>
 </head>
+
 <body>
     <header>
-        <h1>Venue Information</h1>
-        <nav>
-            <a href="#welcome"><i class="fas fa-home"></i> Welcome</a>
-            <a href="#venue"><i class="fas fa-map-marker-alt"></i> Venue</a>
-            <a href="#site-map"><i class="fas fa-map"></i> Site Map</a>
-            <a href="#important-contacts"><i class="fas fa-address-book"></i> Contacts</a>
-            <a href="#schedule"><i class="fas fa-calendar-alt"></i> Schedule</a>
-            <a href="#hotel"><i class="fas fa-hotel"></i> Hotel</a>
-            <a href="#players-night"><i class="fas fa-moon"></i> Players Night</a>
-            <a href="#experience"><i class="fas fa-globe"></i> Experience Iași</a>
-        </nav>
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back
+        </a>
+        <img src="logo.svg" alt="Logo" class="logo">
     </header>
     <main>
-        <section id="venue-information" class="content-section">
-            <div class="info-container">
-                <h2>Practice and Match Venues</h2>
-                <ul>
-                    <li>Two dedicated courts are located on-site at the tournament venue.</li>
-                    <li>Additional courts are available for practice just a few minutes away from the main venue.</li>
-                </ul>
-
-                <h2>Player Services</h2>
-                <ul>
-                    <li><strong>Players Desk:</strong> The Players Desk will be open daily from 8:00 AM until the conclusion of the last match.</li>
-                    <li><strong>Catering:</strong> Meal vouchers can be purchased at the Players Desk for €10 each. These vouchers can be redeemed at designated catering areas for a delicious and convenient meal option.</li>
-                    <li><strong>Gym Facilities:</strong> A well-equipped 70sqm training room is located on-site at the tournament venue for your pre-match warm-up or workout needs. In addition, complimentary access is available to a state-of-the-art gym.</li>
-                    <li><strong>Official Ball:</strong> Practice balls available at the Players Desk.</li>
-                    <li><strong>Stringing Services:</strong> Stringing services are available for a fee. Please contact the Players Desk for current pricing and to schedule your racquet.</li>
-                </ul>
+        <section id="schedule">
+            <h2>Tournament Schedule</h2>
+            <div class="schedule-container">
+                <div class="schedule-day">
+                    <h3>Sunday, 7 July 2024</h3>
+                    <p><strong>Qualifying</strong><br>Starting 10:30 AM<br>Media Day</p>
+                </div>
+                <div class="schedule-day">
+                    <h3>Monday, 8 July 2024</h3>
+                    <p><strong>Main Draw, R32</strong><br>Day Session starting 10:00 AM<br>Evening Session not before 4:30 PM</p>
+                </div>
+                <div class="schedule-day">
+                    <h3>Tuesday, 9 July 2024</h3>
+                    <p><strong>Main Draw, R32</strong><br>Day Session starting 12:00 PM<br>Evening Session not before 4:30 PM<br>Kids Day, Meet & Greet, Players Night</p>
+                </div>
+                <div class="schedule-day">
+                    <h3>Wednesday, 10 July 2024</h3>
+                    <p><strong>Main Draw, R16</strong><br>Day Session starting 12:00 PM<br>Evening Session not before 4:30 PM<br>BCR Leasing Player Meet & Greet</p>
+                </div>
+                <div class="schedule-day">
+                    <h3>Thursday, 11 July 2024</h3>
+                    <p><strong>Main Draw, R16</strong><br>Day Session starting 12:00 PM<br>Evening Session not before 4:30 PM<br>Fan Zone Cuban Party</p>
+                </div>
+                <div class="schedule-day">
+                    <h3>Friday, 12 July 2024</h3>
+                    <p><strong>Quarterfinals</strong><br>Day Session starting 12:00 PM<br>Evening Session not before 4:30 PM<br>Lounge Wine Tasting</p>
+                </div>
+                <div class="schedule-day">
+                    <h3>Saturday, 13 July 2024</h3>
+                    <p><strong>Semifinals</strong><br>Day Session starting 11:00 AM<br>MET Romania Photo Booth, Central Court Give Away</p>
+                </div>
+                <div class="schedule-day">
+                    <h3>Sunday, 14 July 2024</h3>
+                    <p><strong>Finals</strong><br>Doubles Final starting 11:00 AM<br>Singles Final not before 1:00 PM<br>MET Romania Photo Booth, Artistic Live Moment</p>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Concord Iasi Open. All rights reserved.</p>
-    </footer>
 </body>
+
 </html>

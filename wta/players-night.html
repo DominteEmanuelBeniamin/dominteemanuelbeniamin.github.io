@@ -3,28 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Players Night - Concord Iasi Open</title>
-    <link rel="stylesheet" href="stylesforplayersnight.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Players Night</title>
+    <link rel="stylesheet" href="stylesforhotel.css">
+    <style>
+        .party-container {
+            max-width: 1200px;
+            margin: 80px auto 20px; /* Adjusted top margin to avoid overlap with fixed header */
+            padding: 20px;
+            background-color: #EFEFED;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .party-info {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .party-info img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .party-info .image-left,
+        .party-info .image-right {
+            flex: 1;
+        }
+        .party-details {
+            flex: 2;
+            padding: 20px;
+        }
+        .party-details h2 {
+            color: #A223E6; /* purple */
+            border-bottom: 2px solid #FF2F92; /* pink */
+            padding-bottom: 10px;
+        }
+        .party-details p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .party-details ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+        .party-details ul li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        @media (max-width: 768px) {
+            .party-info {
+                flex-direction: column;
+            }
+            .party-details {
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Players Night</h1>
-        <nav>
-            <a href="index.html"><i class="fas fa-home"></i> Home</a>
-            <a href="#players-night"><i class="fas fa-calendar-alt"></i> Event Details</a>
-            <a href="venue.html"><i class="fas fa-map-marker-alt"></i> Venue</a>
-            <a href="site-map.html"><i class="fas fa-map"></i> Site Map</a>
-            <a href="important-contacts.html"><i class="fas fa-address-book"></i> Contacts</a>
-            <a href="schedule.html"><i class="fas fa-calendar-alt"></i> Schedule</a>
-            <a href="hotel.html"><i class="fas fa-hotel"></i> Hotel</a>
-            <a href="players-night.html"><i class="fas fa-moon"></i> Players Night</a>
-            <a href="experience.html"><i class="fas fa-globe"></i> Experience Iași</a>
-        </nav>
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back
+        </a>
+        <img src="logo.svg" alt="Logo" class="logo">
     </header>
-    <main>
-        <section id="players-night" class="content-section">
-            <div class="night-details centered-content">
+    <div class="party-container">
+        <div class="party-info">
+            <div class="party-details">
                 <h2>Heads Up, Players! Pizza Party at the Palace!</h2>
                 <p>Mark your calendars for Tuesday, July 9th at 8 PM.</p>
                 <p>We're taking the party to the gorgeous gardens of the Palace of Culture, a 10 minute drive from the official hotel.</p>
@@ -41,10 +87,13 @@
                 <p>RSVP at the players desk.</p>
                 <p>We look forward to having you!</p>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Concord Iasi Open. All rights reserved.</p>
-    </footer>
+            <div class="image-left">
+                <img src="images/playersnight2.jpg" alt="Pizza Party Image 1">
+            </div>
+            <div class="image-right">
+                <img src="images/playersnight1.jpg" alt="Pizza Party Image 2">
+            </div>
+        </div>
+    </div>
 </body>
 </html>

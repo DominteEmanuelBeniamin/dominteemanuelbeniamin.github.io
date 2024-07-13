@@ -4,89 +4,204 @@ body {
     padding: 0;
     background-color: #EFEFED; /* dusty white */
     color: #222222; /* dark gray */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 header {
-    background-color: #222222; /* dark gray */
-    color: white;
-    padding: 40px 20px;
+    background-color: #A223E6; /* purple */
+    color: #EFEFED; /* pink */
+    padding: 20px;
     text-align: center;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 36px;
+header .logo {
+    max-height: 50px;
+    margin: 0 20px;
 }
 
 nav {
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav.left {
+    margin-right: 20px; /* Add some space between the logo and the left nav */
+}
+
+nav.right {
+    margin-left: 20px; /* Add some space between the logo and the right nav */
 }
 
 nav a {
-    color: white;
+    color: #EFEFED; /* pink */
     text-decoration: none;
     margin: 0 10px;
-    font-size: 16px;
+    font-size: 18px;
     display: inline-flex;
     align-items: center;
 }
 
 nav a i {
-    margin-right: 5px;
+    margin-right: 8px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 80px auto 20px; /* Adjusted top margin to avoid overlap with fixed header */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-info, .pricing-info {
+    margin: 20px 0;
+}
+
+.hotel-details h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #222;
+}
+
+.hotel-details p, .reservation-details p, .pricing-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.room-pricing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accommodation-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.accommodation-info th, .accommodation-info td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.accommodation-info th {
+    background-color: #f4f4f4;
+}
+
+.accommodation-info td {
+    font-size: 14px;
 }
 
 main {
-    padding: 160px 20px 20px;
+    padding: 80px 20px 20px 20px; /* Add padding top to avoid content being hidden under the fixed header */
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 28px;
+    color: #A223E6; /* purple */
+    border-bottom: 2px solid #FF2F92; /* pink */
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.service {
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 22px;
+    color: #FF2F92; /* pink */
+}
+
+.service p {
+    font-size: 16px;
+    color: #555555; /* lighter gray */
+    margin: 5px 0;
+}
+
+#venues .content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#venues .content .image-container {
+    flex: 0 0 100%; /* Default to full width */
+    margin-right: 20px;
+    max-width: 750px; /* Max width for large screens */
+}
+
+#venues .content .image-container img {
+    width: 100%; /* Make image responsive */
+    height: auto;
+}
+
+#venues .content .info-container {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
+    justify-content: center;
 }
 
-.content-section {
-    margin-bottom: 40px;
-    padding: 40px 0;
-    width: 100%;
-    max-width: 800px;
-    text-align: center;
+#venues .content .info-container ul {
+    list-style: none;
+    padding: 0;
 }
 
-.centered-content {
-    text-align: center;
+#venues .content .info-container p {
+    margin: 10px 0;
 }
 
-.experience-details {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+#venues .content .info-container a {
+    color: #A223E6; /* purple */
+    text-decoration: none;
 }
 
-.experience-item h2 {
-    font-size: 28px;
-    color: #F15A24; /* orange */
-    margin-top: 0;
+/* Media Queries for Responsiveness */
+@media (min-width: 576px) {
+    #venues .content .image-container {
+        flex: 0 0 50%; /* Adjust size for small screens */
+    }
 }
 
-.experience-item p {
-    margin-bottom: 10px;
-    color: #222222; /* dark gray */
+@media (min-width: 768px) {
+    #venues .content .image-container {
+        flex: 0 0 50%; /* Adjust size for medium screens */
+    }
 }
 
-footer {
-    background-color: #222222; /* dark gray */
-    color: #E4EE51; /* yellow */
-    text-align: center;
-    padding: 20px;
-    width: 100%;
+@media (min-width: 992px) {
+    #venues .content .image-container {
+        flex: 0 0 45%; /* Adjust size for large screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    #venues .content .image-container {
+        flex: 0 0 40%; /* Adjust size for extra large screens */
+    }
 }
 
 /* Additional styles for the restaurant section */
@@ -174,5 +289,54 @@ footer {
 
     .experience-item p {
         font-size: 0.8em;
+    }
+}
+
+/* Custom styles for the alternating image and text layout */
+.experience-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.experience-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.experience-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.experience-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.experience-item img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.experience-item .text-container {
+    width: 50%;
+    padding: 20px;
+}
+
+.experience-item h2 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .experience-item {
+        flex-direction: column !important;
+    }
+    .experience-item img, .experience-item .text-container {
+        width: 100%;
     }
 }

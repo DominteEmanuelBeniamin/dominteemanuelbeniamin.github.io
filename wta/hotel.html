@@ -3,72 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Official Hotel - Concord Iasi Open</title>
-    <link rel="stylesheet" href="stylesforofficialhotel.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Official Hotel</title>
+    <link rel="stylesheet" href="stylesforhotel.css">
+    <style>
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .image-container {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 45%;
+            height: auto;
+            margin-right: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-container .text-content {
+            max-width: 45%;
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Official Hotel</h1>
-        <nav>
-            <a href="index.html"><i class="fas fa-home"></i> Home</a>
-            <a href="#official-hotel"><i class="fas fa-hotel"></i> Hotel Details</a>
-        </nav>
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back
+        </a>
+        <img src="logo.svg" alt="Logo" class="logo">
     </header>
-    <main>
-        <section id="official-hotel" class="content-section">
-            <div class="hotel-details">
-                <h2>Hotel Unirea</h2>
-                <p>Piata Unirii No 5<br>Iasi 700056, Romania<br>+40 232 205 000</p>
-                <p>HOTEL RESERVATIONS - Florin Groza<br>+40 731 313 880<br><a href="mailto:florin.groza@hotelunirea.ro">florin.groza@hotelunirea.ro</a></p>
+    <div class="container">
+        <div class="image-container">
+            <img src="images/hotel.jpg" alt="Hotel Image 1">
+            <div class="text-content">
+                <div class="hotel-info">
+                    <div class="hotel-details">
+                        <h2>Hotel Unirea</h2>
+                        <p>Piata Unirii No 5</p>
+                        <p>Iasi 700056, Romania</p>
+                        <p>+40 232 205 000</p>
+                    </div>
+                    <div class="reservation-details">
+                        <p><strong>HOTEL RESERVATIONS - Florin Groza</strong></p>
+                        <p>+40 731 313 880</p>
+                        <p>florin.groza@hotelunirea.ro</p>
+                    </div>
+                </div>
             </div>
-            <div class="hotel-info">
-                <p>Distance To Site: 4.2 km</p>
-                <p>Breakfast: Included for all</p>
-                <p>Additional Tax: No</p>
-                <p>Single Room: € 117</p>
-                <p>Double Room: € 117</p>
-            </div>
-            <div class="accommodation-schedule">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Event</th>
-                            <th>Complimentary Accommodation Start Date</th>
-                            <th>Complimentary Accommodation Finish Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Qualifying</td>
-                            <td>Saturday 06 July</td>
-                            <td>Check out - the day after the player’s last match</td>
-                        </tr>
-                        <tr>
-                            <td>Singles Main Draw</td>
-                            <td>Saturday 06 July</td>
-                            <td>Thursday 11 July check out OR the day after the player's last match check out, whichever is later</td>
-                        </tr>
-                        <tr>
-                            <td>Doubles - Advance Entry / Doubles - On-site Sign-in</td>
-                            <td>Sunday 07 July</td>
-                            <td>Through and including the night of the player’s last match</td>
-                        </tr>
-                        <tr>
-                            <td>Alternates*</td>
-                            <td>As per relevant draw</td>
-                            <td>As per relevant draw</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-        <div class="hotel-link">
-            <p>For more details, visit the official website: <a href="https://www.hotelunirea.ro/en/">Hotel Unirea</a></p>
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2024 Concord Iasi Open. All rights reserved.</p>
-    </footer>
+        <div class="image-container">
+            <img src="images/camera.jpg" alt="Hotel Image 2">
+            <div class="text-content">
+                <div class="pricing-info">
+                    <p><strong>Distance To Site:</strong> 4.2 km</p>
+                    <p><strong>Breakfast:</strong> Included for all</p>
+                    <p><strong>Additional Tax:</strong> No</p>
+                    <div class="room-pricing">
+                        <p><strong>Single Room:</strong> € 117</p>
+                        <p><strong>Double Room:</strong> € 117</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accommodation-info">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Complimentary Accommodation Start Date</th>
+                        <th>Complimentary Accommodation Finish Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Qualifying</td>
+                        <td>Saturday 06 July</td>
+                        <td>Check out - the day after the player's last match</td>
+                    </tr>
+                    <tr>
+                        <td>Singles Main Draw</td>
+                        <td>Saturday 06 July</td>
+                        <td>Thursday 11 July check out OR the day after the player's last match check out, whichever is later</td>
+                    </tr>
+                    <tr>
+                        <td>Doubles - Advance Entry / Doubles - On-site Sign-in</td>
+                        <td>Sunday 07 July</td>
+                        <td>Through and including the night of the player's last match</td>
+                    </tr>
+                    <tr>
+                        <td>Alternates</td>
+                        <td>as per relevant draw</td>
+                        <td>as per relevant draw</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
 </html>

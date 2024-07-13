@@ -4,158 +4,174 @@ body {
     padding: 0;
     background-color: #EFEFED; /* dusty white */
     color: #222222; /* dark gray */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 header {
-    background-color: #222222; /* dark gray */
-    color: white;
-    padding: 40px 20px;
+    background-color: #A223E6; /* purple */
+    color: #EFEFED; /* pink */
+    padding: 20px;
     text-align: center;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 36px;
+header .logo {
+    max-height: 50px;
+    margin: 0 20px;
 }
 
 nav {
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav.left {
+    margin-right: 20px; /* Add some space between the logo and the left nav */
+}
+
+nav.right {
+    margin-left: 20px; /* Add some space between the logo and the right nav */
 }
 
 nav a {
-    color: white;
+    color: #EFEFED; /* pink */
     text-decoration: none;
     margin: 0 10px;
-    font-size: 16px;
+    font-size: 18px;
     display: inline-flex;
     align-items: center;
 }
 
 nav a i {
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 main {
-    padding: 160px 20px 20px;
+    padding: 80px 20px 20px 20px; /* Add padding top to avoid content being hidden under the fixed header */
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 28px;
+    color: #A223E6; /* purple */
+    border-bottom: 2px solid #FF2F92; /* pink */
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.service {
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 22px;
+    color: #FF2F92; /* pink */
+}
+
+.service p {
+    font-size: 16px;
+    color: #555555; /* lighter gray */
+    margin: 5px 0;
+}
+
+#venues .content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#venues .content .image-container {
+    flex: 0 0 100%; /* Default to full width */
+    margin-right: 20px;
+    max-width: 750px; /* Max width for large screens */
+}
+
+#venues .content .image-container img {
+    width: 100%; /* Make image responsive */
+    height: auto;
+}
+
+#venues .content .info-container {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
+    justify-content: center;
 }
 
-.content-section {
-    margin-bottom: 40px;
-    padding: 40px;
-    width: 100%;
-    max-width: 800px;
-    text-align: left;
-    border: 2px solid #5C7604; /* green */
-    border-radius: 10px;
-    background-color: #FFF;
+#venues .content .info-container ul {
+    list-style: none;
+    padding: 0;
 }
 
-.info-container h2 {
-    font-size: 1.5em;
-    color: #F15A24; /* orange */
-    margin-bottom: 10px;
+#venues .content .info-container p {
+    margin: 10px 0;
 }
 
-.info-container ul {
-    list-style-type: none; /* Remove default bullets */
-    padding-left: 0;
+#venues .content .info-container a {
+    color: #A223E6; /* purple */
+    text-decoration: none;
 }
 
-.info-container ul li {
-    margin-bottom: 15px; /* Increased space between list items */
-    font-size: 1em;
-    position: relative;
-    padding-left: 20px; /* Space for custom bullet */
+.schedule-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
 }
 
-.info-container ul li::before {
-    content: "•"; /* Custom bullet */
-    position: absolute;
-    left: 0;
-    color: #5C7604; /* green */
-    font-size: 1.5em;
-}
-
-footer {
-    background-color: #222222; /* dark gray */
-    color: #E4EE51; /* yellow */
-    text-align: center;
+.schedule-day {
+    background-color: #FFFFFF; /* white */
+    border: 2px solid #A223E6; /* purple */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
     padding: 20px;
-    width: 100%;
+    flex: 0 0 45%; /* Adjust for responsiveness */
+    max-width: 45%;
 }
 
-/* Responsive Design */
+.schedule-day h3 {
+    font-size: 24px;
+    color: #A223E6; /* purple */
+    margin: 0 0 10px 0;
+}
+
+.schedule-day p {
+    font-size: 16px;
+    color: #555555; /* lighter gray */
+    margin: 5px 0;
+}
+
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    header {
-        padding: 40px 20px;
-    }
-
-    header h1 {
-        font-size: 32px;
-    }
-
-    nav a {
-        margin: 0 10px;
-        font-size: 14px;
-    }
-
-    main {
-        padding: 140px 15px 15px;
-    }
-
-    .content-section {
-        padding: 30px;
-    }
-
-    .info-container h2 {
-        font-size: 1.2em;
-    }
-
-    .info-container ul li {
-        font-size: 0.9em;
+    .schedule-day {
+        flex: 0 0 100%; /* Full width for smaller screens */
+        max-width: 100%;
     }
 }
 
-@media (max-width: 480px) {
-    header {
-        padding: 30px 20px;
-    }
-
-    header h1 {
-        font-size: 28px;
-    }
-
-    nav a {
-        margin: 0 8px;
-        font-size: 12px;
-    }
-
-    main {
-        padding: 130px 10px 10px;
-    }
-
-    .content-section {
-        padding: 20px;
-    }
-
-    .info-container h2 {
-        font-size: 1em;
-    }
-
-    .info-container ul li {
-        font-size: 0.8em;
+@media (min-width: 1200px) {
+    .schedule-day {
+        flex: 0 0 30%; /* Adjust size for extra large screens */
+        max-width: 30%;
     }
 }
