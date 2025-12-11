@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bine ați venit</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="snowflakes" id="snowflakes"></div>
+
+    <div class="main-container d-flex flex-column justify-content-center align-items-center min-vh-100">
+        
+        <div class="content-wrapper text-center">
+
+
+            <!-- Verighete cu fundiță -->
+            <div class="rings-decoration mb-4">
+                <img src="inel.png" alt="Verighete" style="width: 220px; height: auto;">
+            </div>
+
+            <h1 class="font-playfair title-main mb-2">Bine ați venit!</h1>
+            <p class="font-lato subtitle-main mb-5">Găsiți-vă locul la masa de sărbătoare</p>
+
+            <div id="searchScreen" class="search-box-area">
+                
+                <div class="input-wrapper mb-5">
+                    <input type="text" id="searchInput" class="clean-input" placeholder="Introduceți numele de familie..." autocomplete="off">
+                    <div id="resultsContainer" class="results-dropdown"></div>
+                </div>
+
+                <button id="searchButton" class="btn btn-elegant">
+                    CAUTĂ LOCUL
+                </button>
+            </div>
+
+            <div id="resultScreen" style="display: none;" class="fade-in">
+                <p class="font-lato text-uppercase small text-gold mb-3">Vă așteptăm cu drag la</p>
+                
+                <h2 id="groupName" class="font-playfair text-white mb-4">Familia Popescu</h2>
+                
+                <div class="table-display mb-5">
+                    <span class="d-block text-gold font-playfair" style="font-size: 1.2rem; font-style: italic;">Masa Nr.</span>
+                    <span id="tableNumber" class="font-playfair big-number">15</span>
+                </div>
+                
+                <button onclick="window.location.reload();" class="btn btn-outline-elegant btn-sm">
+                    Caută alt nume
+                </button>
+            </div>
+
+        </div>
+
+        <div class="footer-decor mt-5">
+            <i class="fa-solid fa-snowflake fa-spin-slow"></i>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

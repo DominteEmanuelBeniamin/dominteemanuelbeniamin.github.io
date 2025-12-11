@@ -1,0 +1,190 @@
+:root {
+    --crimson: #65081f;      /* Culoarea ta din meniu */
+    --gold: #efe2d5;         /* Culoarea scrisului din meniu */
+    --gold-dim: #d0c0b0;     /* O nuanță mai stinsă pt placeholder */
+}
+
+body {
+    background-color: var(--crimson);
+    font-family: 'Lato', sans-serif;
+    color: var(--gold);
+    overflow: hidden; /* Fără bare de derulare */
+    margin: 0;
+    padding: 0;
+}
+
+/* === FULGI DE ZĂPADĂ ANIMAȚI === */
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.snowflake {
+    position: absolute;
+    color: var(--gold);
+    opacity: 0;
+    animation: fall linear infinite;
+    text-shadow: 0 0 3px rgba(239, 226, 213, 0.5);
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10px) rotate(0deg) translateX(0);
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(50vh) rotate(180deg) translateX(20px);
+    }
+    95% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(105vh) rotate(360deg) translateX(-10px);
+        opacity: 0;
+    }
+}
+
+/* === TIPOGRAFIE === */
+.font-playfair { font-family: 'Playfair Display', serif; }
+.font-lato { font-family: 'Lato', sans-serif; }
+
+.title-main {
+    font-size: 3.5rem;
+    color: var(--gold);
+    font-weight: 500;
+}
+
+.subtitle-main {
+    font-size: 1.1rem;
+    color: var(--gold);
+    opacity: 0.8;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* === INPUT (Linie fină, stil invitație) === */
+.clean-input {
+    width: 100%;
+    max-width: 400px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--gold); /* Doar o linie jos */
+    color: var(--gold);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.clean-input:focus {
+    outline: none;
+    border-bottom: 2px solid #fff; /* Se luminează la click */
+    box-shadow: 0 10px 20px -10px rgba(239, 226, 213, 0.2);
+}
+
+.clean-input::placeholder {
+    color: var(--gold-dim);
+    font-style: italic;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    opacity: 0.6;
+}
+
+/* === SUGERĂRI === */
+.results-dropdown {
+    max-width: 400px;
+    margin: 10px auto 0;
+    background: rgba(60, 10, 20, 0.95);
+    border: 1px solid rgba(239, 226, 213, 0.3);
+    border-radius: 8px;
+    text-align: left;
+}
+.suggestion-item {
+    padding: 15px;
+    color: var(--gold);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.suggestion-item:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* === BUTONUL (Simplu, Elegant) === */
+.btn-elegant {
+    background-color: var(--gold);
+    color: var(--crimson);
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 15px 50px;
+    border-radius: 50px; /* Rotund complet */
+    border: none;
+    font-size: 1.1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-elegant:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(239, 226, 213, 0.4);
+}
+
+/* === REZULTATE === */
+.big-number {
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--gold);
+    text-shadow: 0 0 30px rgba(239, 226, 213, 0.3);
+}
+
+.btn-outline-elegant {
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    border-radius: 30px;
+    padding: 8px 25px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+.btn-outline-elegant:hover {
+    background: var(--gold);
+    color: var(--crimson);
+}
+
+/* Footer Fulg */
+.footer-decor {
+    color: var(--gold);
+    opacity: 0.3;
+    font-size: 1.5rem;
+}
+.fa-spin-slow {
+    animation: spin 10s linear infinite;
+}
+@keyframes spin { 100% { transform: rotate(360deg); } }
+
+/* Fade in animation */
+.fade-in {
+    animation: fadeIn 0.8s ease-in;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .title-main { font-size: 2.5rem; }
+    .clean-input { font-size: 1.2rem; }
+}
