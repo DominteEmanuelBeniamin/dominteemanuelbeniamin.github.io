@@ -91,16 +91,16 @@ function handleSearch(searchTerm, isFinalSearch = false) {
             // Dacă e un singur rezultat, îl afișăm direct
             displayResult(matches[0].masa, matches[0].nume_grup);
         } else if (matches.length > 1) {
-            // Mai multe rezultate - afișăm sugestiile
-            displaySuggestions(matches.slice(0, 8));
+            // Mai multe rezultate - afișăm TOATE
+            displaySuggestions(matches);
         } else {
             // Nimic găsit
             showNotFound();
         }
     } else {
-        // Autocomplete (sugestii la tastare)
+        // Autocomplete (sugestii la tastare) - TOATE rezultatele
         if (matches.length > 0 && term.length >= 2) {
-            displaySuggestions(matches.slice(0, 6));
+            displaySuggestions(matches);
         } else {
             resultsDiv.style.display = 'none';
         }
