@@ -20,39 +20,46 @@
         
         <div class="content-wrapper text-center">
 
-
-            <!-- Verighete cu fundiță -->
-            <div class="rings-decoration mb-4">
-                <img src="inel.png" alt="Verighete" style="width: 220px; height: auto;">
-            </div>
-
-            <h1 class="font-playfair title-main mb-2">Bine ați venit!</h1>
-            <p class="font-lato subtitle-main mb-5">Găsiți-vă locul la masa de sărbătoare</p>
-
-            <div id="searchScreen" class="search-box-area">
-                
-                <div class="input-wrapper mb-5">
-                    <input type="text" id="searchInput" class="clean-input" placeholder="Introduceți numele de familie..." autocomplete="off">
-                    <div id="resultsContainer" class="results-dropdown"></div>
+            <!-- ECRAN CĂUTARE -->
+            <div id="searchScreen">
+                <!-- Verighete cu fundiță -->
+                <div class="rings-decoration mb-4">
+                    <img src="inel.png" alt="Verighete" style="width: 220px; height: auto;">
                 </div>
 
-                <button id="searchButton" class="btn btn-elegant">
-                    CAUTĂ LOCUL
-                </button>
+                <h1 class="font-playfair title-main mb-2">Bine ați venit!</h1>
+                <p class="font-lato subtitle-main mb-5">Găsiți-vă locul la masa de sărbătoare</p>
+
+                <div class="search-box-area">
+                    <div class="input-wrapper mb-5">
+                        <input type="text" id="searchInput" class="clean-input" placeholder="Introduceți numele de familie..." autocomplete="off">
+                        <div id="resultsContainer" class="results-dropdown"></div>
+                    </div>
+
+                    <button id="searchButton" class="btn btn-elegant">
+                        CAUTĂ LOCUL
+                    </button>
+                </div>
             </div>
 
-            <div id="resultScreen" style="display: none;" class="fade-in">
-                <p class="font-lato text-uppercase small text-gold mb-3">Vă așteptăm cu drag la</p>
+            <!-- ECRAN REZULTAT -->
+            <div id="resultScreen" class="result-screen">
+                <!-- Verighete și pe ecranul de rezultat -->
+                <div class="rings-decoration mb-4">
+                    <img src="inel.png" alt="Verighete" style="width: 180px; height: auto;">
+                </div>
+
+                <p class="font-lato text-uppercase small text-gold mb-3">Vă așteptăm cu drag</p>
                 
                 <h2 id="groupName" class="font-playfair text-white mb-4">Familia Popescu</h2>
                 
                 <div class="table-display mb-5">
-                    <span class="d-block text-gold font-playfair" style="font-size: 1.2rem; font-style: italic;">Masa Nr.</span>
+                    <span class="d-block text-gold font-playfair table-label">Masa Nr.</span>
                     <span id="tableNumber" class="font-playfair big-number">15</span>
                 </div>
                 
-                <button onclick="window.location.reload();" class="btn btn-outline-elegant btn-sm">
-                    Caută alt nume
+                <button id="searchAgainBtn" class="btn btn-outline-elegant">
+                    <i class="fa-solid fa-magnifying-glass me-2"></i>Caută alt nume
                 </button>
             </div>
 

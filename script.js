@@ -1,10 +1,13 @@
-let GUESTS_DATA = []; // Va conține datele încărcate din JSON
+let GUESTS_DATA = [];
 
 const resultsDiv = document.getElementById('resultsContainer');
 const tableNumberDisplay = document.getElementById('tableNumber');
 const groupNameDisplay = document.getElementById('groupName');
 const searchInput = document.getElementById('searchInput');
 const searchButton = document.getElementById('searchButton');
+const searchScreen = document.getElementById('searchScreen');
+const resultScreen = document.getElementById('resultScreen');
+const searchAgainBtn = document.getElementById('searchAgainBtn');
 
 // 1. ÎNCĂRCAREA DATELOR DIN JSON
 async function loadGuestData() {
@@ -18,38 +21,57 @@ async function loadGuestData() {
         initializeApp(); 
     } catch (error) {
         console.error("Nu s-a putut încărca lista de invitați:", error);
-        // Afișează un mesaj clar pe ecran dacă eșuează încărcarea
-        document.getElementById('searchScreen').innerHTML = '<h2>Ne pare rău! Nu am putut încărca lista de așezare. Vă rugăm reîncărcați pagina sau cereți ajutor.</h2>';
+        searchScreen.innerHTML = `
+            <div class="rings-decoration mb-4">
+                <img src="inel.png" alt="Verighete" style="width: 180px; height: auto;">
+            </div>
+            <h2 class="font-playfair" style="color: var(--gold);">Ne pare rău!</h2>
+            <p>Nu am putut încărca lista. Vă rugăm reîncărcați pagina.</p>
+        `;
     }
 }
 
-// 2. INIȚIALIZAREA APLICAȚIEI (după ce datele sunt gata)
+// 2. INIȚIALIZAREA APLICAȚIEI
 function initializeApp() {
-    // Setează ascultătorii de evenimente
     searchInput.addEventListener('input', (e) => {
-        const searchTerm = e.target.value;
-        handleSearch(searchTerm);
+        handleSearch(e.target.value);
+    });
+
+    searchInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            handleSearch(searchInput.value, true);
+        }
     });
 
     searchButton.addEventListener('click', () => {
-        const searchTerm = searchInput.value;
-        handleSearch(searchTerm, true);
+        handleSearch(searchInput.value, true);
+    });
+
+    searchAgainBtn.addEventListener('click', () => {
+        resetToSearch();
     });
 }
 
+// 3. RESETARE LA ECRANUL DE CĂUTARE
+function resetToSearch() {
+    searchInput.value = '';
+    resultsDiv.innerHTML = '';
+    resultsDiv.style.display = 'none';
+    
+    resultScreen.style.display = 'none';
+    searchScreen.style.display = 'block';
+    
+    searchInput.focus();
+}
 
-// 3. LOGICA PRINCIPALĂ DE CĂUTARE ȘI FILTRARE
+// 4. LOGICA PRINCIPALĂ DE CĂUTARE
 function handleSearch(searchTerm, isFinalSearch = false) {
     const term = searchTerm.trim().toLowerCase();
-    resultsDiv.innerHTML = ''; // Golește sugestiile
+    resultsDiv.innerHTML = '';
 
-    // Ascunde rezultatul mare când se reîncepe căutarea
-    document.getElementById('resultScreen').style.display = 'none';
-    document.getElementById('searchScreen').style.display = 'block';
-
-    if (term.length < 3 && !isFinalSearch) {
-         resultsDiv.style.display = 'none';
-         return; 
+    if (term.length < 2 && !isFinalSearch) {
+        resultsDiv.style.display = 'none';
+        return; 
     }
 
     // Filtrarea datelor
@@ -58,77 +80,95 @@ function handleSearch(searchTerm, isFinalSearch = false) {
     );
 
     if (isFinalSearch) {
-        // Căutare finală (pe buton)
-        const exactMatch = matches.find(guest => guest.nume_grup.toLowerCase() === term);
+        // Căutare finală (pe buton sau Enter)
+        const exactMatch = matches.find(guest => 
+            guest.nume_grup.toLowerCase() === term
+        );
 
         if (exactMatch) {
             displayResult(exactMatch.masa, exactMatch.nume_grup);
+        } else if (matches.length === 1) {
+            // Dacă e un singur rezultat, îl afișăm direct
+            displayResult(matches[0].masa, matches[0].nume_grup);
+        } else if (matches.length > 1) {
+            // Mai multe rezultate - afișăm sugestiile
+            displaySuggestions(matches.slice(0, 8));
         } else {
-            // Dacă nu e potrivire exactă, afișează sugestiile de eroare/rafinare
-            displayError("Numele nu a fost găsit. Vă rugăm verificați ortografia sau selectați din sugestii.");
-            displaySuggestions(matches.slice(0, 5)); 
+            // Nimic găsit
+            showNotFound();
         }
     } else {
         // Autocomplete (sugestii la tastare)
-        if (matches.length > 0 && term.length >= 3) {
-            displaySuggestions(matches.slice(0, 5));
+        if (matches.length > 0 && term.length >= 2) {
+            displaySuggestions(matches.slice(0, 6));
+        } else {
+            resultsDiv.style.display = 'none';
         }
     }
 }
 
+// 5. AFIȘARE SUGESTII
 function displaySuggestions(suggestions) {
+    resultsDiv.innerHTML = '';
     resultsDiv.style.display = 'block';
+    
     suggestions.forEach(guest => {
         const suggestionItem = document.createElement('div');
         suggestionItem.className = 'suggestion-item';
         suggestionItem.textContent = guest.nume_grup;
+        
         suggestionItem.addEventListener('click', () => {
-            searchInput.value = guest.nume_grup;
-            resultsDiv.innerHTML = '';
-            resultsDiv.style.display = 'none';
-            // După click pe sugestie, afișăm direct rezultatul
-            displayResult(guest.masa, guest.nume_grup); 
+            displayResult(guest.masa, guest.nume_grup);
         });
+        
         resultsDiv.appendChild(suggestionItem);
     });
 }
 
+// 6. AFIȘARE REZULTAT FINAL
 function displayResult(masa, nume) {
-    document.getElementById('searchScreen').style.display = 'none'; 
-    document.getElementById('resultScreen').style.display = 'flex'; 
+    // Ascunde complet ecranul de căutare
+    searchScreen.style.display = 'none';
+    resultsDiv.style.display = 'none';
+    
+    // Actualizează și afișează ecranul de rezultat
     tableNumberDisplay.textContent = masa;
     groupNameDisplay.textContent = nume;
+    
+    resultScreen.style.display = 'flex';
 }
 
-function displayError(message) {
-    // O modalitate simplă de a arăta eroarea (poate fi îmbunătățită cu un div sub input)
-    alert(message);
+// 7. AFIȘARE MESAJ "NU S-A GĂSIT"
+function showNotFound() {
+    resultsDiv.innerHTML = `
+        <div class="suggestion-item" style="text-align: center; cursor: default; opacity: 0.7;">
+            <i class="fa-solid fa-circle-exclamation me-2"></i>
+            Numele nu a fost găsit. Verificați ortografia.
+        </div>
+    `;
+    resultsDiv.style.display = 'block';
 }
 
 // GENERARE FULGI DE ZĂPADĂ
 function createSnowflakes() {
     const container = document.getElementById('snowflakes');
     const snowflakeChars = ['✦', '✧', '❄', '✶', '•', '◦'];
-    const numberOfFlakes = 50;
+    const numberOfFlakes = 45;
     
     for (let i = 0; i < numberOfFlakes; i++) {
         const flake = document.createElement('div');
         flake.className = 'snowflake';
         flake.textContent = snowflakeChars[Math.floor(Math.random() * snowflakeChars.length)];
         
-        // Poziție aleatoare pe orizontală
         flake.style.left = Math.random() * 100 + '%';
         
-        // Dimensiune aleatoare
-        const size = Math.random() * 0.8 + 0.4; // între 0.4 și 1.2 rem
+        const size = Math.random() * 0.7 + 0.4;
         flake.style.fontSize = size + 'rem';
         
-        // Opacitate aleatoare pentru adâncime
         flake.style.opacity = Math.random() * 0.4 + 0.2;
         
-        // Durata și delay aleator
-        const duration = Math.random() * 10 + 8; // între 8 și 18 secunde
-        const delay = Math.random() * 15; // delay între 0 și 15 secunde
+        const duration = Math.random() * 10 + 8;
+        const delay = Math.random() * 15;
         
         flake.style.animationDuration = duration + 's';
         flake.style.animationDelay = delay + 's';
@@ -137,6 +177,6 @@ function createSnowflakes() {
     }
 }
 
-// PORNIRE: Generez fulgii, apoi încarc datele
+// PORNIRE
 createSnowflakes();
 loadGuestData();
