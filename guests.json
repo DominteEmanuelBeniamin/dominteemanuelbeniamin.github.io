@@ -1,264 +1,978 @@
 [
-    {"nume_grup": "Dominte Traian", "masa": 14},
-    {"nume_grup": "Dominte Luminita", "masa": 14},
-    {"nume_grup": "Grigore Ema", "masa": 14},
-    {"nume_grup": "Grigore Iulian", "masa": 14},
-    {"nume_grup": "Grigore Sarah", "masa": 14},
-    {"nume_grup": "Grigore Ionas", "masa": 14},
-    {"nume_grup": "Estera Dominte", "masa": 14},
-    {"nume_grup": "Stefan Dominte", "masa": 14},
-    {"nume_grup": "Diana Dominte", "masa": 14},
-    {"nume_grup": "Delia Profire", "masa": 14},
-    {"nume_grup": "David Profire", "masa": 14},
-    {"nume_grup": "Andries Ducu", "masa": 23},
-    {"nume_grup": "Andries Mirela", "masa": 23},
-    {"nume_grup": "Andries Andrei", "masa": 23},
-    {"nume_grup": "Samuel Mocanu", "masa": 19},
-    {"nume_grup": "Andreea Mocanu", "masa": 19},
-    {"nume_grup": "Haures Adina", "masa": 22},
-    {"nume_grup": "Haures Ionut", "masa": 22},
-    {"nume_grup": "Estera Rosca", "masa": 22},
-    {"nume_grup": "Rosca Dan", "masa": 22},
-    {"nume_grup": "Suhoreanu Bogdan", "masa": 23},
-    {"nume_grup": "Suhoreanu Lacramioara", "masa": 23},
-    {"nume_grup": "Sohoreanu Stefan", "masa": 23},
-    {"nume_grup": "Sohoreanu Radu", "masa": 23},
-    {"nume_grup": "Sohoreanu Maricica", "masa": 23},
-    {"nume_grup": "Sora Didin", "masa": 23},
-    {"nume_grup": "Sohoreanu Paul", "masa": 22},
-    {"nume_grup": "Sohoreanu Tatiana", "masa": 22},
-    {"nume_grup": "Ghita Dominte", "masa": 22},
-    {"nume_grup": "Geanina Dominte", "masa": 22},
-    {"nume_grup": "Consatinescu Costica", "masa": 22},
-    {"nume_grup": "Constantinescu Ea", "masa": 22},
-    {"nume_grup": "Constatinescu Tania", "masa": 22},
-    {"nume_grup": "Ivan  Petrică", "masa": 23},
-    {"nume_grup": "Ivan dorina", "masa": 23},
-    {"nume_grup": "Elisabeta Carare", "masa": 5},
-    {"nume_grup": "Simona Sohoreanu", "masa": 19},
-    {"nume_grup": "Cristi Manghiuc", "masa": 19},
-    {"nume_grup": "Daniel Dominte", "masa": 18},
-    {"nume_grup": "Mirela Dominte", "masa": 18},
-    {"nume_grup": "Lidia  Dominte", "masa": 5},
-    {"nume_grup": "Vali Dominte", "masa": 19},
-    {"nume_grup": "Iulia Dominte", "masa": 19},
-    {"nume_grup": "copil 1 vali", "masa": 19},
-    {"nume_grup": "copil 2 vali", "masa": 19},
-    {"nume_grup": "copil 3 vali", "masa": 19},
-    {"nume_grup": "copil 4 vali", "masa": 19},
-    {"nume_grup": "Vulpe El unchiu", "masa": 18},
-    {"nume_grup": "Vulpe ea", "masa": 18},
-    {"nume_grup": "Razvan", "masa": 18},
-    {"nume_grup": "Raluca", "masa": 18},
-    {"nume_grup": "Timotei Dominte", "masa": 18},
-    {"nume_grup": "Ana Dominte", "masa": 18},
-    {"nume_grup": "Tabita", "masa": 18},
-    {"nume_grup": "Daniel", "masa": 18},
-    {"nume_grup": "Costica Tabara", "masa": 10},
-    {"nume_grup": "Aurica Tabara", "masa": 10},
-    {"nume_grup": "Eliza Sumanaru", "masa": 10},
-    {"nume_grup": "Pavel Sumanaru", "masa": 10},
-    {"nume_grup": "Bogdan Tabara", "masa": 10},
-    {"nume_grup": "Ana Lupascu", "masa": 10},
-    {"nume_grup": "Ion Lupascu", "masa": 10},
-    {"nume_grup": "Olimpia Tabara", "masa": 10},
-    {"nume_grup": "Denisia", "masa": 10},
-    {"nume_grup": "Beni", "masa": 10},
-    {"nume_grup": "Aurel", "masa": 10},
-    {"nume_grup": "Sotia lui Aurel", "masa": 10},
-    {"nume_grup": "Adi", "masa": 10},
-    {"nume_grup": "Ion Tabara", "masa": 10},
-    {"nume_grup": "Lacri Tabara", "masa": 10},
-    {"nume_grup": "Haures el", "masa": 14},
-    {"nume_grup": "Haures ea", "masa": 14},
-    {"nume_grup": "Jean Paul", "masa": 6},
-    {"nume_grup": "Lalica", "masa": 22},
-    {"nume_grup": "Nicoleta", "masa": 14},
-    {"nume_grup": "Vera", "masa": 1},
-    {"nume_grup": "Apostu mihaela", "masa": 12},
-    {"nume_grup": "Apostu Mircea", "masa": 12},
-    {"nume_grup": "Apostu Ariana", "masa": 1},
-    {"nume_grup": "Padurariu Lorina", "masa": 12},
-    {"nume_grup": "Padurariu Gelu", "masa": 12},
-    {"nume_grup": "Padurariu alen", "masa": 7},
-    {"nume_grup": "Padurariu copil Alma", "masa": 7},
-    {"nume_grup": "Padurariu adelina", "masa": 7},
-    {"nume_grup": "Botez Andreea", "masa": 7},
-    {"nume_grup": "Botez Manu", "masa": 7},
-    {"nume_grup": "Dupu Doina", "masa": 12},
-    {"nume_grup": "Dumea Cornel", "masa": 7},
-    {"nume_grup": "Dumea Arina", "masa": 7},
-    {"nume_grup": "Dumea Ema", "masa": 7},
-    {"nume_grup": "Dupu Andrei", "masa": 7},
-    {"nume_grup": "Popa Adelina", "masa": 7},
-    {"nume_grup": "Popa alex", "masa": 7},
-    {"nume_grup": "Popa Eve", "masa": 7},
-    {"nume_grup": "Ivan Dorica", "masa": 12},
-    {"nume_grup": "ivan Oana", "masa": 12},
-    {"nume_grup": "Lili apostu", "masa": 11},
-    {"nume_grup": "Dan Apostu", "masa": 11},
-    {"nume_grup": "Daniel Apostu", "masa": 9},
-    {"nume_grup": "Angela Suhar", "masa": 13},
-    {"nume_grup": "Mihai Suhar", "masa": 13},
-    {"nume_grup": "Debora Andasorov", "masa": 9},
-    {"nume_grup": "Copil Anda", "masa": 9},
-    {"nume_grup": "Klim Andasorov", "masa": 9},
-    {"nume_grup": "Adi ambrosie", "masa": 11},
-    {"nume_grup": "Viorel Ursache", "masa": 11},
-    {"nume_grup": "Daniela Ursache", "masa": 11},
-    {"nume_grup": "David Calugarici", "masa": 3},
-    {"nume_grup": "Beni Calugarici", "masa": 3},
-    {"nume_grup": "Elias Calugarici", "masa": 9},
-    {"nume_grup": "Daria Calugarici", "masa": 9},
-    {"nume_grup": "Adi Ursache", "masa": 3},
-    {"nume_grup": "Daniela Apostu", "masa": 13},
-    {"nume_grup": "Corneliu Apostu", "masa": 13},
-    {"nume_grup": "Timeea Apostu", "masa": 4},
-    {"nume_grup": "Mara Apostu", "masa": 4},
-    {"nume_grup": "Florentina Catalino", "masa": 11},
-    {"nume_grup": "Victor Catalino", "masa": 11},
-    {"nume_grup": "Beni catalino", "masa": 4},
-    {"nume_grup": "Sofia catalino", "masa": 4},
-    {"nume_grup": "Elsa Brown", "masa": 11},
-    {"nume_grup": "Isabela", "masa": 4},
-    {"nume_grup": "julian", "masa": 4},
-    {"nume_grup": "Adirana Cintec", "masa": 13},
-    {"nume_grup": "Ovidiu Cintec", "masa": 13},
-    {"nume_grup": "Emily Cintec", "masa": 4},
-    {"nume_grup": "elisei Cintec", "masa": 4},
-    {"nume_grup": "Adela Atudorei", "masa": 11},
-    {"nume_grup": "Eduard Ghergut", "masa": 11},
-    {"nume_grup": "Luminita Ghergut", "masa": 11},
-    {"nume_grup": "Alina rauleac", "masa": 16},
-    {"nume_grup": "Iulian rauleac", "masa": 16},
-    {"nume_grup": "Robert rauleac", "masa": 1},
-    {"nume_grup": "Elisa rauleac", "masa": 1},
-    {"nume_grup": "Florin covit", "masa": 12},
-    {"nume_grup": "Lisa covit", "masa": 12},
-    {"nume_grup": "Camelia Caeriu", "masa": 16},
-    {"nume_grup": "Virgil Caeriu", "masa": 16},
-    {"nume_grup": "Alina ambrosie", "masa": 16},
-    {"nume_grup": "Lucian Ambrosie", "masa": 16},
-    {"nume_grup": "liviu ursache", "masa": 15},
-    {"nume_grup": "Oana Ursache", "masa": 15},
-    {"nume_grup": "Daniel Leonte", "masa": 15},
-    {"nume_grup": "Carmen Leonte", "masa": 15},
-    {"nume_grup": "Agnes Leonte", "masa": 3},
-    {"nume_grup": "Dragos Cretu", "masa": 21},
-    {"nume_grup": "Laura cretu", "masa": 21},
-    {"nume_grup": "Mihaela  Stoica", "masa": 16},
-    {"nume_grup": "Codrin Stoica", "masa": 16},
-    {"nume_grup": "Sorin Bulgariu", "masa": 20},
-    {"nume_grup": "IrinaBulgariu", "masa": 20},
-    {"nume_grup": "Ancuta Sticea", "masa": 20},
-    {"nume_grup": "Paul Sticea", "masa": 20},
-    {"nume_grup": "sticea copil", "masa": 20},
-    {"nume_grup": "sticea copil", "masa": 20},
-    {"nume_grup": "Daria pruteanu", "masa": 3},
-    {"nume_grup": "Matei pruteanu", "masa": 3},
-    {"nume_grup": "Fani calugarici", "masa": 15},
-    {"nume_grup": "Elena Calugarici", "masa": 15},
-    {"nume_grup": "Iulia Amariei", "masa": 1},
-    {"nume_grup": "Gabi Amariei", "masa": 1},
-    {"nume_grup": "Ioana Hamac", "masa": 1},
-    {"nume_grup": "Catalin Hamac", "masa": 1},
-    {"nume_grup": "Manzala catalin", "masa": 15},
-    {"nume_grup": "Manzala teona", "masa": 15},
-    {"nume_grup": "Stamateanh ovidiu", "masa": 21},
-    {"nume_grup": "Stamateanu anca", "masa": 21},
-    {"nume_grup": "Carlescu ionel", "masa": 15},
-    {"nume_grup": "Sotia", "masa": 15},
-    {"nume_grup": "Prodan Ada", "masa": 13},
-    {"nume_grup": "Prodan Marian", "masa": 13},
-    {"nume_grup": "Madalina Apetrei", "masa": 5},
-    {"nume_grup": "Robert leonte", "masa": 21},
-    {"nume_grup": "Iiana leonte", "masa": 21},
-    {"nume_grup": "Calin leonte", "masa": 3},
-    {"nume_grup": "Tudor leonte", "masa": 3},
-    {"nume_grup": "Corina galan", "masa": 5},
-    {"nume_grup": "Daria medeleanu", "masa": 5},
-    {"nume_grup": "David Buraga", "masa": 5},
-    {"nume_grup": "Lavinia boca", "masa": 5},
-    {"nume_grup": "Luigi Arama", "masa": 5},
-    {"nume_grup": "Sami stangu", "masa": 5},
-    {"nume_grup": "Alesia stangu", "masa": 5},
-    {"nume_grup": "Adi ciobanu", "masa": 21},
-    {"nume_grup": "Corina ciobanu", "masa": 21},
-    {"nume_grup": "copil adi ciobanu", "masa": 21},
-    {"nume_grup": "Abiculesei alexandra", "masa": 21},
-    {"nume_grup": "Abiculesei elisei", "masa": 21},
-    {"nume_grup": "Sara buhaianu", "masa": 3},
-    {"nume_grup": "Tabita ivan", "masa": 5},
-    {"nume_grup": "Claudia pintilei", "masa": 5},
-    {"nume_grup": "Sofia Strugaru", "masa": 9},
-    {"nume_grup": "Lena strugaru", "masa": 9},
-    {"nume_grup": "Florin Strugaru", "masa": 9},
-    {"nume_grup": "Ionut  Iordache", "masa": 8},
-    {"nume_grup": "Sorina Iordache", "masa": 8},
-    {"nume_grup": "Daniel grigoroscuta", "masa": 9},
-    {"nume_grup": "Anca bohan", "masa": 12},
-    {"nume_grup": "Ovidiu Bohan", "masa": 12},
-    {"nume_grup": "Alexandra Bohan", "masa": 7},
-    {"nume_grup": "Lili Damian", "masa": 12},
-    {"nume_grup": "Valdimir", "masa": 12},
-    {"nume_grup": "Daniel condurache", "masa": 8},
-    {"nume_grup": "Violeta Condurache", "masa": 8},
-    {"nume_grup": "Tatiana Tudor", "masa": 8},
-    {"nume_grup": "Iulian lucan", "masa": 8},
-    {"nume_grup": "Iustina lucan", "masa": 6},
-    {"nume_grup": "Mangalagiu Jan", "masa": 17},
-    {"nume_grup": "Mangalagiu Paula", "masa": 17},
-    {"nume_grup": "Mihaiescu  Sergiu", "masa": 8},
-    {"nume_grup": "Mihaiescu Loredana", "masa": 8},
-    {"nume_grup": "Genucu Grigoroscuta", "masa": 17},
-    {"nume_grup": "Ani Grigoroscuta", "masa": 17},
-    {"nume_grup": "Lucian vasilica", "masa": 8},
-    {"nume_grup": "ana lucian", "masa": 8},
-    {"nume_grup": "Matei aione", "masa": 1},
-    {"nume_grup": "bocai florin", "masa": 12},
-    {"nume_grup": "Carmen bocai", "masa": 12},
-    {"nume_grup": "Cornel cusutura", "masa": 15},
-    {"nume_grup": "Daniela Cusutura", "masa": 15},
-    {"nume_grup": "Elisei loghin", "masa": 19},
-    {"nume_grup": "Densia Loghin", "masa": 19},
-    {"nume_grup": "Ionica Miron", "masa": 13},
-    {"nume_grup": "copil miron", "masa": 4},
-    {"nume_grup": "Samantha Miron", "masa": 13},
-    {"nume_grup": "Stefania Berea", "masa": 6},
-    {"nume_grup": "Andrei caliman", "masa": 6},
-    {"nume_grup": "Diana Costea", "masa": 6},
-    {"nume_grup": "Calin", "masa": 6},
-    {"nume_grup": "Laura Ungureanu", "masa": 6},
-    {"nume_grup": "Iubitu", "masa": 6},
-    {"nume_grup": "Georgiana", "masa": 6},
-    {"nume_grup": "Prieten", "masa": 6},
-    {"nume_grup": "Sandu Sirbu", "masa": 6},
-    {"nume_grup": "Mitica", "masa": 13},
-    {"nume_grup": "Gabi", "masa": 13},
-    {"nume_grup": "Emi", "masa": 8},
-    {"nume_grup": "Marta", "masa": 8},
-    {"nume_grup": "Elvis Iacobescu", "masa": 20},
-    {"nume_grup": "Iacobescu Dina", "masa": 20},
-    {"nume_grup": "Ursache Deborah", "masa": 3},
-    {"nume_grup": "Ursache David", "masa": 3},
-    {"nume_grup": "ovidiu  moroșan", "masa": 8},
-    {"nume_grup": "catalina moroșan", "masa": 8},
-    {"nume_grup": "Moraru nelu", "masa": 17},
-    {"nume_grup": "Moraru maria", "masa": 17},
-    {"nume_grup": "Oana viisoranu", "masa": 5},
-    {"nume_grup": "aapscariteti sebi", "masa": 20},
-    {"nume_grup": "apascaritei Irina", "masa": 20},
-    {"nume_grup": "iustina Simion", "masa": 6},
-    {"nume_grup": "Alexa Ana Maria", "masa": 6},
-    {"nume_grup": "Iubit", "masa": 6},
-    {"nume_grup": "călugărici Nicoleta", "masa": 17},
-    {"nume_grup": "soțul", "masa": 17},
-    {"nume_grup": "ambrosie florrin", "masa": 16},
-    {"nume_grup": "Nicoleta Ambrosie", "masa": 16},
-    {"nume_grup": "Gelu Savencu", "masa": 17},
-    {"nume_grup": "Gabi savencu", "masa": 17},
-    {"nume_grup": "Alin Andrusca", "masa": 9},
-    {"nume_grup": "Sotia", "masa": 9},
-    {"nume_grup": "birzu", "masa": 20},
-    {"nume_grup": "ea", "masa": 20}
+  {
+    "nume_grup": "Jean-paul El-nabbout",
+    "masa": 1
+  },
+  {
+    "nume_grup": "Veronica El-nabbout",
+    "masa": 1
+  },
+  {
+    "nume_grup": "Apostu Ariana",
+    "masa": 1
+  },
+  {
+    "nume_grup": "Robert Rauleac",
+    "masa": 1
+  },
+  {
+    "nume_grup": "Elisa Rauleac",
+    "masa": 1
+  },
+  {
+    "nume_grup": "Iulia Amariei",
+    "masa": 1
+  },
+  {
+    "nume_grup": "Gabi Amariei",
+    "masa": 1
+  },
+  {
+    "nume_grup": "Ioana Hamac",
+    "masa": 1
+  },
+  {
+    "nume_grup": "Catalin Hamac",
+    "masa": 1
+  },
+  {
+    "nume_grup": "Matei Aione",
+    "masa": 1
+  },
+  {
+    "nume_grup": "David Calugarici",
+    "masa": 3
+  },
+  {
+    "nume_grup": "Beni Calugarici",
+    "masa": 3
+  },
+  {
+    "nume_grup": "Adi Ursache",
+    "masa": 3
+  },
+  {
+    "nume_grup": "Daria Pruteanu",
+    "masa": 3
+  },
+  {
+    "nume_grup": "Matei Pruteanu",
+    "masa": 3
+  },
+  {
+    "nume_grup": "Calin Leonte",
+    "masa": 3
+  },
+  {
+    "nume_grup": "Tudor Leonte",
+    "masa": 3
+  },
+  {
+    "nume_grup": "Sara Buhaianu",
+    "masa": 3
+  },
+  {
+    "nume_grup": "Ursache Deborah",
+    "masa": 3
+  },
+  {
+    "nume_grup": "Ursache David",
+    "masa": 3
+  },
+  {
+    "nume_grup": "Timeea Apostu",
+    "masa": 4
+  },
+  {
+    "nume_grup": "Mara Apostu",
+    "masa": 4
+  },
+  {
+    "nume_grup": "Beni Catalino",
+    "masa": 4
+  },
+  {
+    "nume_grup": "Sofia Catalino",
+    "masa": 4
+  },
+  {
+    "nume_grup": "Isabela Brown",
+    "masa": 4
+  },
+  {
+    "nume_grup": "Julian Brown",
+    "masa": 4
+  },
+  {
+    "nume_grup": "Elisabeta Carare",
+    "masa": 5
+  },
+  {
+    "nume_grup": "Lidia Dominte",
+    "masa": 5
+  },
+  {
+    "nume_grup": "Madalina Apetrei",
+    "masa": 5
+  },
+  {
+    "nume_grup": "Corina Galan",
+    "masa": 5
+  },
+  {
+    "nume_grup": "Daria Medeleanu",
+    "masa": 5
+  },
+  {
+    "nume_grup": "David Buraga",
+    "masa": 5
+  },
+  {
+    "nume_grup": "Lavinia Boca",
+    "masa": 5
+  },
+  {
+    "nume_grup": "Luigi Arama",
+    "masa": 5
+  },
+  {
+    "nume_grup": "Sami Stangu",
+    "masa": 5
+  },
+  {
+    "nume_grup": "Alesia Stangu",
+    "masa": 5
+  },
+  {
+    "nume_grup": "Tabita Ivan",
+    "masa": 5
+  },
+  {
+    "nume_grup": "Claudia Pintilei",
+    "masa": 5
+  },
+  {
+    "nume_grup": "Oana Viisoreanu",
+    "masa": 5
+  },
+  {
+    "nume_grup": "Iustina Lucan",
+    "masa": 6
+  },
+  {
+    "nume_grup": "Stefania Berea",
+    "masa": 6
+  },
+  {
+    "nume_grup": "Andrei Caliman",
+    "masa": 6
+  },
+  {
+    "nume_grup": "Diana Costea",
+    "masa": 6
+  },
+  {
+    "nume_grup": "Calin Paduraru",
+    "masa": 6
+  },
+  {
+    "nume_grup": "Laura Ungureanu",
+    "masa": 6
+  },
+  {
+    "nume_grup": "Gabriel Rusu",
+    "masa": 6
+  },
+  {
+    "nume_grup": "Georgiana Bostan",
+    "masa": 6
+  },
+  {
+    "nume_grup": "Nicu",
+    "masa": 6
+  },
+  {
+    "nume_grup": "Sandu Sirbu",
+    "masa": 6
+  },
+  {
+    "nume_grup": "Iustina Simion",
+    "masa": 6
+  },
+  {
+    "nume_grup": "Alexa Ana Maria",
+    "masa": 6
+  },
+  {
+    "nume_grup": "Iubit",
+    "masa": 6
+  },
+  {
+    "nume_grup": "Padurariu Alen",
+    "masa": 7
+  },
+  {
+    "nume_grup": "Padurariu Adelina",
+    "masa": 7
+  },
+  {
+    "nume_grup": "Botez Andreea",
+    "masa": 7
+  },
+  {
+    "nume_grup": "Botez Manu",
+    "masa": 7
+  },
+  {
+    "nume_grup": "Dumea Cornel",
+    "masa": 7
+  },
+  {
+    "nume_grup": "Dumea Arina",
+    "masa": 7
+  },
+  {
+    "nume_grup": "Dupu Andrei",
+    "masa": 7
+  },
+  {
+    "nume_grup": "Popa Adelina",
+    "masa": 7
+  },
+  {
+    "nume_grup": "Popa Alex",
+    "masa": 7
+  },
+  {
+    "nume_grup": "Alexandra Bohan",
+    "masa": 7
+  },
+  {
+    "nume_grup": "Ionut Iordache",
+    "masa": 8
+  },
+  {
+    "nume_grup": "Sorina Iordache",
+    "masa": 8
+  },
+  {
+    "nume_grup": "Daniel Condurache",
+    "masa": 8
+  },
+  {
+    "nume_grup": "Violeta Condurache",
+    "masa": 8
+  },
+  {
+    "nume_grup": "Tatiana Tudor",
+    "masa": 8
+  },
+  {
+    "nume_grup": "Iulian Lucan",
+    "masa": 8
+  },
+  {
+    "nume_grup": "Mihaiescu Sergiu",
+    "masa": 8
+  },
+  {
+    "nume_grup": "Mihaiescu Loredana",
+    "masa": 8
+  },
+  {
+    "nume_grup": "Lucian Vasilica",
+    "masa": 8
+  },
+  {
+    "nume_grup": "Ana Lucian",
+    "masa": 8
+  },
+  {
+    "nume_grup": "Emi Susanu",
+    "masa": 8
+  },
+  {
+    "nume_grup": "Marta Susanu",
+    "masa": 8
+  },
+  {
+    "nume_grup": "Ovidiu Moroșan",
+    "masa": 8
+  },
+  {
+    "nume_grup": "Catalina Moroșan",
+    "masa": 8
+  },
+  {
+    "nume_grup": "Daniel Apostu",
+    "masa": 9
+  },
+  {
+    "nume_grup": "Debora Andasorov",
+    "masa": 9
+  },
+  {
+    "nume_grup": "Klim Andasorov",
+    "masa": 9
+  },
+  {
+    "nume_grup": "Elias Calugarici",
+    "masa": 9
+  },
+  {
+    "nume_grup": "Daria Calugarici",
+    "masa": 9
+  },
+  {
+    "nume_grup": "Sofia Strugaru",
+    "masa": 9
+  },
+  {
+    "nume_grup": "Lena Strugaru",
+    "masa": 9
+  },
+  {
+    "nume_grup": "Florin Strugaru",
+    "masa": 9
+  },
+  {
+    "nume_grup": "Daniel Grigoroscuta",
+    "masa": 9
+  },
+  {
+    "nume_grup": "Andrus Alin",
+    "masa": 9
+  },
+  {
+    "nume_grup": "Andrus Ramona",
+    "masa": 9
+  },
+  {
+    "nume_grup": "Costica Tabara",
+    "masa": 10
+  },
+  {
+    "nume_grup": "Aurica Tabara",
+    "masa": 10
+  },
+  {
+    "nume_grup": "Eliza Sumanaru",
+    "masa": 10
+  },
+  {
+    "nume_grup": "Pavel Sumanaru",
+    "masa": 10
+  },
+  {
+    "nume_grup": "Bogdan Tabara",
+    "masa": 10
+  },
+  {
+    "nume_grup": "Ana Lupascu",
+    "masa": 10
+  },
+  {
+    "nume_grup": "Ion Lupascu",
+    "masa": 10
+  },
+  {
+    "nume_grup": "Olimpia Tabara",
+    "masa": 10
+  },
+  {
+    "nume_grup": "Denisia Mitrea",
+    "masa": 10
+  },
+  {
+    "nume_grup": "Beniamin Mitrea",
+    "masa": 10
+  },
+  {
+    "nume_grup": "Aurel Tabara",
+    "masa": 10
+  },
+  {
+    "nume_grup": "Mihaela Oghinciuc",
+    "masa": 10
+  },
+  {
+    "nume_grup": "Adi Tabara",
+    "masa": 10
+  },
+  {
+    "nume_grup": "Ion Tabara",
+    "masa": 10
+  },
+  {
+    "nume_grup": "Lacramioara Tabara",
+    "masa": 10
+  },
+  {
+    "nume_grup": "Lili Apostu",
+    "masa": 11
+  },
+  {
+    "nume_grup": "Dan Apostu",
+    "masa": 11
+  },
+  {
+    "nume_grup": "Adi Ambrosie",
+    "masa": 11
+  },
+  {
+    "nume_grup": "Viorel Ursache",
+    "masa": 11
+  },
+  {
+    "nume_grup": "Daniela Ursache",
+    "masa": 11
+  },
+  {
+    "nume_grup": "Florentina Catalino",
+    "masa": 11
+  },
+  {
+    "nume_grup": "Victor Catalino",
+    "masa": 11
+  },
+  {
+    "nume_grup": "Elsa Brown",
+    "masa": 11
+  },
+  {
+    "nume_grup": "Adela Atudorei",
+    "masa": 11
+  },
+  {
+    "nume_grup": "Eduard Ghergut",
+    "masa": 11
+  },
+  {
+    "nume_grup": "Luminita Ghergut",
+    "masa": 11
+  },
+  {
+    "nume_grup": "Apostu Mihaela",
+    "masa": 12
+  },
+  {
+    "nume_grup": "Apostu Mircea",
+    "masa": 12
+  },
+  {
+    "nume_grup": "Padurariu Lorina",
+    "masa": 12
+  },
+  {
+    "nume_grup": "Padurariu Gelu",
+    "masa": 12
+  },
+  {
+    "nume_grup": "Dupu Doina",
+    "masa": 12
+  },
+  {
+    "nume_grup": "Ivan Dorica",
+    "masa": 12
+  },
+  {
+    "nume_grup": "Ivan Oana",
+    "masa": 12
+  },
+  {
+    "nume_grup": "Florin Covit",
+    "masa": 12
+  },
+  {
+    "nume_grup": "Larisa Covit",
+    "masa": 12
+  },
+  {
+    "nume_grup": "Anca Bohan",
+    "masa": 12
+  },
+  {
+    "nume_grup": "Ovidiu Bohan",
+    "masa": 12
+  },
+  {
+    "nume_grup": "Lili Garlea",
+    "masa": 12
+  },
+  {
+    "nume_grup": "Vladimir Garlea",
+    "masa": 12
+  },
+  {
+    "nume_grup": "Bocai Florin",
+    "masa": 12
+  },
+  {
+    "nume_grup": "Carmen Bocai",
+    "masa": 12
+  },
+  {
+    "nume_grup": "Angela Suhar",
+    "masa": 13
+  },
+  {
+    "nume_grup": "Mihai Suhar",
+    "masa": 13
+  },
+  {
+    "nume_grup": "Daniela Apostu",
+    "masa": 13
+  },
+  {
+    "nume_grup": "Corneliu Apostu",
+    "masa": 13
+  },
+  {
+    "nume_grup": "Adirana Cintec",
+    "masa": 13
+  },
+  {
+    "nume_grup": "Ovidiu Cintec",
+    "masa": 13
+  },
+  {
+    "nume_grup": "Prodan Ada",
+    "masa": 13
+  },
+  {
+    "nume_grup": "Prodan Marian",
+    "masa": 13
+  },
+  {
+    "nume_grup": "Ionica Miron",
+    "masa": 13
+  },
+  {
+    "nume_grup": "Samantha Miron",
+    "masa": 13
+  },
+  {
+    "nume_grup": "Mitica Moscalu",
+    "masa": 13
+  },
+  {
+    "nume_grup": "Gabriela Moscalu",
+    "masa": 13
+  },
+  {
+    "nume_grup": "Dominte Traian",
+    "masa": 14
+  },
+  {
+    "nume_grup": "Dominte Luminita",
+    "masa": 14
+  },
+  {
+    "nume_grup": "Grigore Ema",
+    "masa": 14
+  },
+  {
+    "nume_grup": "Grigore Iulian",
+    "masa": 14
+  },
+  {
+    "nume_grup": "Dominte Estera",
+    "masa": 14
+  },
+  {
+    "nume_grup": "Dominte Stefan",
+    "masa": 14
+  },
+  {
+    "nume_grup": "Dominte Diana",
+    "masa": 14
+  },
+  {
+    "nume_grup": "Profire Delia",
+    "masa": 14
+  },
+  {
+    "nume_grup": "Profire David",
+    "masa": 14
+  },
+  {
+    "nume_grup": "Haures Cornel",
+    "masa": 14
+  },
+  {
+    "nume_grup": "Haures Ana",
+    "masa": 14
+  },
+  {
+    "nume_grup": "Nicoleta Bacaoanu",
+    "masa": 14
+  },
+  {
+    "nume_grup": "Liviu Ursache",
+    "masa": 15
+  },
+  {
+    "nume_grup": "Oana Ursache",
+    "masa": 15
+  },
+  {
+    "nume_grup": "Daniel Leonte",
+    "masa": 15
+  },
+  {
+    "nume_grup": "Carmen Leonte",
+    "masa": 15
+  },
+  {
+    "nume_grup": "Fani Calugarici",
+    "masa": 15
+  },
+  {
+    "nume_grup": "Elena Calugarici",
+    "masa": 15
+  },
+  {
+    "nume_grup": "Manzala Catalin",
+    "masa": 15
+  },
+  {
+    "nume_grup": "Manzala Teona",
+    "masa": 15
+  },
+  {
+    "nume_grup": "Nelu Carlescu",
+    "masa": 15
+  },
+  {
+    "nume_grup": "Ionelia Carlescu",
+    "masa": 15
+  },
+  {
+    "nume_grup": "Cornel Cusutura",
+    "masa": 15
+  },
+  {
+    "nume_grup": "Daniela Cusutura",
+    "masa": 15
+  },
+  {
+    "nume_grup": "Alina Rauleac",
+    "masa": 16
+  },
+  {
+    "nume_grup": "Iulian Rauleac",
+    "masa": 16
+  },
+  {
+    "nume_grup": "Camelia Caeriu",
+    "masa": 16
+  },
+  {
+    "nume_grup": "Virgil Caeriu",
+    "masa": 16
+  },
+  {
+    "nume_grup": "Alina Ambrosie",
+    "masa": 16
+  },
+  {
+    "nume_grup": "Lucian Ambrosie",
+    "masa": 16
+  },
+  {
+    "nume_grup": "Mihaela Stoica",
+    "masa": 16
+  },
+  {
+    "nume_grup": "Codrin Stoica",
+    "masa": 16
+  },
+  {
+    "nume_grup": "Ambrosie Florrin",
+    "masa": 16
+  },
+  {
+    "nume_grup": "Nicoleta Ambrosie",
+    "masa": 16
+  },
+  {
+    "nume_grup": "Mangalagiu Jan",
+    "masa": 17
+  },
+  {
+    "nume_grup": "Mangalagiu Paula",
+    "masa": 17
+  },
+  {
+    "nume_grup": "Genucu Grigoroscuta",
+    "masa": 17
+  },
+  {
+    "nume_grup": "Ani Grigoroscuta",
+    "masa": 17
+  },
+  {
+    "nume_grup": "Moraru Nelu",
+    "masa": 17
+  },
+  {
+    "nume_grup": "Moraru Maria",
+    "masa": 17
+  },
+  {
+    "nume_grup": "Călugărici Nicoleta",
+    "masa": 17
+  },
+  {
+    "nume_grup": "Calugarici Tucu",
+    "masa": 17
+  },
+  {
+    "nume_grup": "Gelu Savencu",
+    "masa": 17
+  },
+  {
+    "nume_grup": "Gabi Savencu",
+    "masa": 17
+  },
+  {
+    "nume_grup": "Daniel Dominte",
+    "masa": 18
+  },
+  {
+    "nume_grup": "Mirela Dominte",
+    "masa": 18
+  },
+  {
+    "nume_grup": "Vulpe Mihai",
+    "masa": 18
+  },
+  {
+    "nume_grup": "Vulpe Fivi",
+    "masa": 18
+  },
+  {
+    "nume_grup": "Raluca Benchea",
+    "masa": 18
+  },
+  {
+    "nume_grup": "Timotei Dominte",
+    "masa": 18
+  },
+  {
+    "nume_grup": "Ana Dominte",
+    "masa": 18
+  },
+  {
+    "nume_grup": "Tabita Muller",
+    "masa": 18
+  },
+  {
+    "nume_grup": "Daniel Muller",
+    "masa": 18
+  },
+  {
+    "nume_grup": "Mocanu Sami",
+    "masa": 19
+  },
+  {
+    "nume_grup": "Mocanu Andreea",
+    "masa": 19
+  },
+  {
+    "nume_grup": "Simona Manghiuc",
+    "masa": 19
+  },
+  {
+    "nume_grup": "Cristi Manghiuc",
+    "masa": 19
+  },
+  {
+    "nume_grup": "Vali Dominte",
+    "masa": 19
+  },
+  {
+    "nume_grup": "Iulia Dominte",
+    "masa": 19
+  },
+  {
+    "nume_grup": "Elisei Loghin",
+    "masa": 19
+  },
+  {
+    "nume_grup": "Denisa Loghin",
+    "masa": 19
+  },
+  {
+    "nume_grup": "Sorin Bulgariu",
+    "masa": 20
+  },
+  {
+    "nume_grup": "Irina Bulgariu",
+    "masa": 20
+  },
+  {
+    "nume_grup": "Ancuta Sticea",
+    "masa": 20
+  },
+  {
+    "nume_grup": "Paul Sticea",
+    "masa": 20
+  },
+  {
+    "nume_grup": "Elvis Iacobescu",
+    "masa": 20
+  },
+  {
+    "nume_grup": "Iacobescu Dina",
+    "masa": 20
+  },
+  {
+    "nume_grup": "Apscariteti Sebi",
+    "masa": 20
+  },
+  {
+    "nume_grup": "Apascaritei Irina",
+    "masa": 20
+  },
+  {
+    "nume_grup": "Ionut Birzu",
+    "masa": 20
+  },
+  {
+    "nume_grup": "Laura Birzu",
+    "masa": 20
+  },
+  {
+    "nume_grup": "Dragos Cretu",
+    "masa": 21
+  },
+  {
+    "nume_grup": "Laura Cretu",
+    "masa": 21
+  },
+  {
+    "nume_grup": "Stamateanu Ovidiu",
+    "masa": 21
+  },
+  {
+    "nume_grup": "Stamateanu Anca",
+    "masa": 21
+  },
+  {
+    "nume_grup": "Robert Leonte",
+    "masa": 21
+  },
+  {
+    "nume_grup": "Ioana Leonte",
+    "masa": 21
+  },
+  {
+    "nume_grup": "Adi Ciobanu",
+    "masa": 21
+  },
+  {
+    "nume_grup": "Corina Ciobanu",
+    "masa": 21
+  },
+  {
+    "nume_grup": "Abiculesei Alexandra",
+    "masa": 21
+  },
+  {
+    "nume_grup": "Abiculesei Elisei",
+    "masa": 21
+  },
+  {
+    "nume_grup": "Haures Adina",
+    "masa": 22
+  },
+  {
+    "nume_grup": "Haures Ionut",
+    "masa": 22
+  },
+  {
+    "nume_grup": "Rosca Estera",
+    "masa": 22
+  },
+  {
+    "nume_grup": "Rosca Dan",
+    "masa": 22
+  },
+  {
+    "nume_grup": "Sohoreanu Paul",
+    "masa": 22
+  },
+  {
+    "nume_grup": "Sohoreanu Tatiana",
+    "masa": 22
+  },
+  {
+    "nume_grup": "Ghita Dominte",
+    "masa": 22
+  },
+  {
+    "nume_grup": "Geanina Dominte",
+    "masa": 22
+  },
+  {
+    "nume_grup": "Consatinescu Costica",
+    "masa": 22
+  },
+  {
+    "nume_grup": "Constantinescu Gica",
+    "masa": 22
+  },
+  {
+    "nume_grup": "Constatinescu Tania",
+    "masa": 22
+  },
+  {
+    "nume_grup": "Vranceanu Elena",
+    "masa": 22
+  },
+  {
+    "nume_grup": "Andries Ducu",
+    "masa": 23
+  },
+  {
+    "nume_grup": "Andries Mirela",
+    "masa": 23
+  },
+  {
+    "nume_grup": "Andries Andrei",
+    "masa": 23
+  },
+  {
+    "nume_grup": "Suhoreanu Bogdan",
+    "masa": 23
+  },
+  {
+    "nume_grup": "Suhoreanu Lacramioara",
+    "masa": 23
+  },
+  {
+    "nume_grup": "Sohoreanu Stefan",
+    "masa": 23
+  },
+  {
+    "nume_grup": "Sohoreanu Radu",
+    "masa": 23
+  },
+  {
+    "nume_grup": "Sohoreanu Maricica",
+    "masa": 23
+  },
+  {
+    "nume_grup": "Stanciu Didina",
+    "masa": 23
+  },
+  {
+    "nume_grup": "Ivan Petrică",
+    "masa": 23
+  },
+  {
+    "nume_grup": "Ivan Dorina",
+    "masa": 23
+  }
 ]
